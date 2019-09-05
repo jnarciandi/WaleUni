@@ -7,7 +7,11 @@ public class Main {
 		Person p1 = new Student("pepe",80.2,1.87,1980,1,21,"Calle Villarroel 157");
 		System.out.println(p1.getAge());
 		System.out.println(p1.getBirth());
-		System.out.println(((Student) p1).getApartment().getAdress());
+		Person e1 = p1;
+		System.out.println(((Student) e1).getApartment().getAdress());
+		//System.out.println(p1.getApartment().getAdress());
+
+		//p1.getApartment().larger(otherApartment);
 
 	}
 

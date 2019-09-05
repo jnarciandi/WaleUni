@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class Person {
 	
-	public String name;
-	public int age;
-	public LocalDate birth;
-	public double weigth;
-	public double heigth;
+	private String name;
+	private int age;
+	private LocalDate birth;
+	private double weigth;
+	private double heigth;
 	
 	//Constructors
 	
@@ -26,6 +26,7 @@ public class Person {
 	
 	
 	//My Methods
+
 	
 	//Check the Adulthood
 	public boolean isAdult() {
