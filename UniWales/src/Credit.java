@@ -14,9 +14,8 @@ public class Credit extends Card {
 		this.debt = debt;
 	}
 
-	public Account(String owner, double balance) {
+	public Credit(String owner, double balance) {
         this.balance = balance;
-        this.owner = owner;
         this.debt = 0.0;
     }
  

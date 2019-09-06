@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.Date;
 
-public class Person {
+public abstract class Person {
 	
 	private String name;
 	private int age;
@@ -26,8 +26,9 @@ public class Person {
 	
 	
 	//My Methods
-
 	
+	public abstract Apartment  getApartment();
+		
 	//Check the Adulthood
 	public boolean isAdult() {
 		if (this.age> 17) {

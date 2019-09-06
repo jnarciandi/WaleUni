@@ -22,9 +22,14 @@ public class Student extends Person{
 		this.subjects = new ArrayList<Subject>();
 		
 	}
+	
+	//Methods
+	
+	public void addPet(Pet pet) {
+		this.pets.add(pet);
+	}
 
-	
-	
+
 	
 	//Getters and Setters
 	public ArrayList<Pet> getPets() {

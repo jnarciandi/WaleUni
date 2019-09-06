@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.ArrayList;
 
 public class Pet {
@@ -23,6 +24,11 @@ public class Pet {
 		this.race = ("Unknown");
 		this.birth = LocalDate.of(year,month,day);
 		this.Vaccines = new ArrayList<Vaccine>();		
+	}
+	
+	public int getAge() {
+		Period timePast = this.birth.until(LocalDate.now());
+		return timePast.getYears();
 	}
 
 }
