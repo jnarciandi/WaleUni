@@ -2,7 +2,8 @@
 public class Debit extends Card {
 	private double balance;
 
-    public Debit(double balance) {
+    public Debit(int number,double balance) {
+    	super(number);
         this.balance = balance;
     }
 
@@ -24,5 +25,18 @@ public class Debit extends Card {
             return true;
         }           
     }
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	@Override
+	public String toString() {
+		return "Debit [balance=" + balance + "]";
+	}
 
 }

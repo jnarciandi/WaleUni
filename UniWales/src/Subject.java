@@ -52,6 +52,7 @@ public class Subject {
 	public String toString() {
 		return "Subject [name=" + name + ", score=" + score + ", modulos=" + modulos + "]";
 	}
+	}
 	
 	
 	

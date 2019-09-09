@@ -28,6 +28,10 @@ public class Student extends Person{
 	public void addPet(Pet pet) {
 		this.pets.add(pet);
 	}
+	
+	public void addSubject (Subject subject) {
+		this.subjects.add(subject);
+	}
 
 
 	
