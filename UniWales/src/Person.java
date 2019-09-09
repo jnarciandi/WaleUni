@@ -28,6 +28,8 @@ public abstract class Person {
 	//My Methods
 	
 	public abstract Apartment  getApartment();
+	
+	public abstract void addPet(Pet pet);
 		
 	//Check the Adulthood
 	public boolean isAdult() {

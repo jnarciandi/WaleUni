@@ -23,6 +23,7 @@ public class Student extends Person{
 		
 	}
 	
+	
 	//Methods
 	
 	public void addPet(Pet pet) {
@@ -31,6 +32,21 @@ public class Student extends Person{
 	
 	public void addSubject (Subject subject) {
 		this.subjects.add(subject);
+	}
+	
+	public double subjectsAverage() {
+		double total = 0.0;
+		int number = 0;
+		for (Subject i : this.subjects) {
+			total = total + i.getScore();
+			number++;
+		}
+		if (number == 0) {
+			return 0;
+		}else {
+			return total/number;
+		}
+		
 	}
 
 
