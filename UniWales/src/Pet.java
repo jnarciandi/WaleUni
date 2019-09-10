@@ -30,5 +30,46 @@ public class Pet {
 		Period timePast = this.birth.until(LocalDate.now());
 		return timePast.getYears();
 	}
+	
+	public void addVaccine(Vaccine vaccine) {
+		this.Vaccines.add(vaccine);
+		}
+	
+	//Getters and setters
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getRace() {
+		return race;
+	}
+	public void setRace(String race) {
+		this.race = race;
+	}
+	public LocalDate getBirth() {
+		return birth;
+	}
+	public void setBirth(LocalDate birth) {
+		this.birth = birth;
+	}
+	public ArrayList<Vaccine> getVaccines() {
+		return Vaccines;
+	}
+	public void setVaccines(ArrayList<Vaccine> vaccines) {
+		Vaccines = vaccines;
+	}
+	@Override
+	public String toString() {
+		return "Pet [name=" + name + ", type=" + type + ", race=" + race + ", birth=" + birth + ", Vaccines=" + Vaccines
+				+ "]";
+	}
 
 }

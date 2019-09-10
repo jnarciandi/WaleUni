@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.ArrayList;
 
 
 public abstract class Person {
@@ -27,9 +28,20 @@ public abstract class Person {
 	
 	//My Methods
 	
+	//Abstract Methods
 	public abstract Apartment  getApartment();
 	
 	public abstract void addPet(Pet pet);
+	
+	public abstract ArrayList<Pet> getPets();
+	
+	public abstract Card getCard();
+	
+	public abstract void setCard(Card card);
+	
+	public abstract ArrayList<Subject> getSubjects(); 
+	
+	public abstract double subjectsAverage();
 		
 	//Check the Adulthood
 	public boolean isAdult() {

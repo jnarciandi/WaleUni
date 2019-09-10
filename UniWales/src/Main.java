@@ -13,23 +13,39 @@ public class Main {
 		// les adjudicamos una mascota a cada uno.
 		
 		ted.addPet(new Pet("Yuyo", "gato", "siamés",2014,5,9));
-		System.out.println(ted.);
+		System.out.println(ted.getPets().get(0).toString());
+		yajaira.addPet(new Pet("Camiso", "Iguana", 2018,3,4));
+		System.out.println(yajaira.getPets().get(0).toString());
+		
+		// vacunemos 2 veces a Yuyo
+		
+		ted.getPets().get(0).addVaccine(new Vaccine("Rabia", 2014,10,12,true));
+		ted.getPets().get(0).addVaccine(new Vaccine("Tetanos", 2016,5,9,false,2020,6,8));
+		System.out.println(ted.getPets().get(0).getVaccines().get(0).toString());
+		System.out.println(ted.getPets().get(0).getVaccines().get(0).revisionTime());
+		System.out.println(ted.getPets().get(0).getVaccines().get(1).toString());
+		System.out.println(ted.getPets().get(0).getVaccines().get(1).revisionTime());
+		
+		// ted have a Debit Card and Yajaira a Credit one.
+		
+		ted.setCard(new Debit(1241222, 200.30));
+		System.out.println(ted.getCard());
+		ted.getCard().pay(20.0);
+		System.out.println(ted.getCard());
+		
+		yajaira.setCard(new Credit(14455566, 15.00));
+		System.out.println(yajaira.getCard());
+		yajaira.getCard().pay(23.0);
+		System.out.println(yajaira.getCard());
 		
 		
+		// Ted have 3 subjects and an average score.
 		
-		/*
-		 * Vaccine a1 = new Vaccine("tuber", 2016, 12, 23, true, 2020, 5, 3);
-		 * System.out.println(a1.revisionTime()); Person p1 = new
-		 * Student("pepe",80.2,1.87,1980,1,21,"Calle Villarroel 157"); //Person p2 = new
-		 * Person("pepe",80.2,1.87,1980,1,21); System.out.println(p1.getAge());
-		 * System.out.println(p1.getBirth()); //Person e1 = p1;
-		 * //System.out.println(((Student) e1).getApartment().getAdress());
-		 * System.out.println(p1.getApartment().getAdress());
-		 * //System.out.println(p2.getApartment().getAdress());
-		 * System.out.println(p1.getAdress());
-		 * 
-		 * //p1.getApartment().larger(otherApartment);
-		 */
+		ted.getSubjects().add(new Subject("Math", 6.5, 7));
+		ted.getSubjects().add(new Subject("English", 8.0, 5));
+		ted.getSubjects().add(new Subject("Anatomy", 4.9, 8));
+		System.out.println("The average score is:" + ted.subjectsAverage());
+		
 	}
 
 }

@@ -1,6 +1,6 @@
 
 
-// CLASE SOLO MALCOPIADA!!!!
+
 public class Credit extends Card {
 	
 	
@@ -75,7 +75,7 @@ public class Credit extends Card {
 
 	@Override
 	public String toString() {
-		return "Credit [balance=" + balance + ", debt=" + debt + ", maxCredit=" + maxCredit + "]";
+		return super.toString() + "Credit [balance=" + balance + ", debt=" + debt + ", maxCredit=" + maxCredit + "]";
 	}
 
 }

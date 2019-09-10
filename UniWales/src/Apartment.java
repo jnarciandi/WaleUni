@@ -14,11 +14,7 @@ public class Apartment {
     			
     }
 
-    /*public Apartment(int rooms, int squareMeters, int pricePerSquareMeter) {
-        this.rooms = rooms;
-        this.squareMeters = squareMeters;
-        this.pricePerSquareMeter = pricePerSquareMeter;
-    }*/
+    
     
     public boolean larger(Apartment otherApartment){
         if (this.squareMeters > otherApartment.squareMeters){
@@ -78,6 +74,12 @@ public class Apartment {
 
 	public void setAdress(String adress) {
 		this.adress = adress;
+	}
+
+	@Override
+	public String toString() {
+		return "Apartment [rooms=" + rooms + ", squareMeters=" + squareMeters + ", pricePerSquareMeter="
+				+ pricePerSquareMeter + ", adress=" + adress + "]";
 	}
 
 }

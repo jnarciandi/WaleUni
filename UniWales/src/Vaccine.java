@@ -34,6 +34,7 @@ public class Vaccine {
 	public Period revisionTime() {
 		if (this.repeatable) {
 			if (this.expirationDate.isAfter(LocalDate.now())) {
+				System.out.println("You have to vaccinate your pet in:");
 				return LocalDate.now().until(this.expirationDate);
 			}else {
 				System.out.println("Your expiration day have been past. Contact Veterinarian immediatly");
